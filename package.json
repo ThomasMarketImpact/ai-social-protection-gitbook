@@ -1,0 +1,29 @@
+{
+  "name": "ai-social-protection-gitbook",
+  "version": "1.0.0",
+  "description": "AI in Social Protection Literature Review GitBook",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "pdf": "gitbook pdf",
+    "epub": "gitbook epub",
+    "mobi": "gitbook mobi",
+    "install-plugins": "gitbook install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-repo/ai-social-protection-gitbook.git"
+  },
+  "keywords": [
+    "AI",
+    "social-protection",
+    "literature-review",
+    "gitbook"
+  ],
+  "author": "GIZ AI Hub",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

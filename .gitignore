@@ -1,0 +1,57 @@
+# GitBook build files
+_book/
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# Working documents - exclude from version control
+/workingdocs/
+workingdocs/
+../workingdocs/
+/Users/tb_mi_m4air_home/dev/ai-sp-litreview/workingdocs/
+/Users/tb_mi_m4air_home/dev/ai-sp-litreview/ai-social-protection-gitbook/workingdocs/
+
+# Claude configuration files - exclude from version control
+CLAUDE.md
+.claude/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Database files (keep source in ai-in-social-protection-review)
+*.db
+*.sqlite
+
+# Backup files
+*.orig
+*.save
+
+# OS files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini

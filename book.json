@@ -1,0 +1,47 @@
+{
+  "title": "AI in Social Protection: State of Knowledge and Gaps",
+  "author": "GIZ AI Hub - Literature Review",
+  "description": "Comprehensive literature review of AI applications in social protection systems worldwide",
+  "language": "en",
+  "gitbook": ">=3.2.0",
+  "root": ".",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md",
+    "glossary": "GLOSSARY.md"
+  },
+  "plugins": [
+    "search-pro",
+    "expandable-chapters",
+    "copy-code-button",
+    "page-toc-button",
+    "back-to-top-button",
+    "theme-default",
+    "-sharing",
+    "github",
+    "edit-link",
+    "anchors"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/your-repo/ai-social-protection-gitbook"
+    },
+    "edit-link": {
+      "base": "https://github.com/your-repo/ai-social-protection-gitbook/edit/main/",
+      "label": "Edit This Page"
+    },
+    "theme-default": {
+      "showLevel": true,
+      "styles": {
+        "website": "assets/styles/website.css"
+      }
+    }
+  },
+  "variables": {
+    "lastUpdated": "2025-10-06",
+    "version": "1.0.0",
+    "totalUseCases": 25,
+    "totalDocuments": 18,
+    "countriesCovered": 15
+  }
+}
