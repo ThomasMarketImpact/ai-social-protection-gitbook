@@ -24,10 +24,10 @@
   ],
   "pluginsConfig": {
     "github": {
-      "url": "https://github.com/your-repo/ai-social-protection-gitbook"
+      "url": "https://github.com/ThomasMarketImpact/ai-social-protection-gitbook"
     },
     "edit-link": {
-      "base": "https://github.com/your-repo/ai-social-protection-gitbook/edit/main/",
+      "base": "https://github.com/ThomasMarketImpact/ai-social-protection-gitbook/edit/main/",
       "label": "Edit This Page"
     },
     "theme-default": {
