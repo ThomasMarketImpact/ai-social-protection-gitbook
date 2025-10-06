@@ -175,8 +175,25 @@ def generate_use_case_page(use_case, documents_df, links_df):
 
     return content
 
+def format_document_url(url):
+    """Format document URL appropriately"""
+    if pd.isna(url) or not url or url == "Not available":
+        return "*Not publicly available*"
+    elif url.startswith("file://"):
+        # Extract filename from local path
+        filename = url.split("/")[-1]
+        return f"*Local document: {filename}*"
+    elif url.startswith("http://") or url.startswith("https://"):
+        # Valid web URL
+        return f"[{url}]({url})"
+    else:
+        return "*Not publicly available*"
+
 def generate_document_page(document):
     """Generate markdown content for a single document"""
+
+    # Format the access URL properly
+    url_display = format_document_url(document.get('Direct_Link_URL'))
 
     content = f"""# {document['Document_ID']}: {clean_text(document.get('Document_Report_Title', 'Untitled'))}
 
@@ -200,7 +217,7 @@ def generate_document_page(document):
 | **Evidence Strength** | {clean_text(document.get('Evidence_Strength', ''))} |
 | **Language** | {clean_text(document.get('Language', ''))} |
 | **DOI** | {clean_text(document.get('DOI', ''))} |
-| **Access URL** | [{clean_text(document.get('Direct_Link_URL', 'Not available'))}]({document.get('Direct_Link_URL', '#')}) |
+| **Access URL** | {url_display} |
 
 ## Publication Details
 

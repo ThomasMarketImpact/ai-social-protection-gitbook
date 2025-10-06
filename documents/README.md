@@ -1,5 +1,7 @@
 # Bibliography
 
+📖 **[Document Access Information](document-access.md)** - Learn how to access documents that aren't directly linked
+
 ## All Documents
 
 | ID | Title | Year | Type | Evidence Strength |
